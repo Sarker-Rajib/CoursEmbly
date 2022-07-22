@@ -1,0 +1,77 @@
+.account-create{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background: url(../images/blur-bg.png) no-repeat right center/cover;
+
+   .sign-in-form{
+      background: #fff;
+      border-radius: 25px;
+      padding: 25px;
+      margin: 0 35px;
+      width: 100%;
+      max-width: 850px;
+      overflow: hidden;
+
+      .form-wrapper{
+         border-radius: 25px;
+         border: 3px solid #3D71BA;
+         padding: 80px 100px 40px;
+         position: relative;
+
+         @media screen and (max-width: 767px) {
+            padding: 40px 20px 35px;
+         }
+
+         &::after{
+            content: '';
+            position: absolute;
+            background: rgb(255, 255, 255);
+            height: 30px;
+            width: 270px;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 0;
+            @media screen and (max-width: 767px) {
+               width: 140px;
+            }
+         }
+
+         .brand-logo{
+            position: absolute;
+            max-width: 250px;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999999;
+
+            @media screen and (max-width: 767px) {
+               max-width: 120px;
+            }
+         }
+
+         .form-label{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+
+            @media screen and (max-width: 767px) {
+               font-size: 14px;
+            }
+         }
+
+         .form-control{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            border-radius: 25px;
+            border: 2px solid #3D71BA;
+
+            @media screen and (max-width: 767px) {
+               font-size: 14px;
+            }
+         }
+      }
+   }
+}
