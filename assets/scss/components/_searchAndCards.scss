@@ -1,0 +1,99 @@
+// search box css
+.search-box{
+   box-shadow: 0 0 35px rgba(#000000, 0.12);
+   border-radius: 40px;
+   padding: 10px;
+   width: 740px;
+
+   input{
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      padding-left: 30px;
+      width: 100%;
+   }
+
+   .button-primary{
+      max-height: 45px;
+      max-width: 180px;
+      padding: 0 10px;
+   }
+}
+
+// University cards (cards from dearch by institute)
+.university-card{
+   width: 100%;
+   max-width: 340px;
+   .image{
+      background: #fff;
+      box-shadow: 0 3px 12px rgba(#000000, 0.16);
+      border-radius: 20px;
+      padding: 25px 25px 80PX;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 270px;
+
+      @media screen and (max-width: 767px) {
+         min-height: 140px;
+      }
+   }
+   
+   .details{
+      background: #fff;
+      box-shadow: 0 6px 14px rgba(#000000, 0.22);
+      border-radius: 16px;
+      padding: 15px;
+      width: 90%;
+      margin: auto;
+      margin-top: -55px;
+      position: relative;
+      z-index: 999;
+
+
+      .title{
+         font-size: 20px;
+         font-weight: 500;
+         font-family: 'Poppins', sans-serif;
+         border-bottom: 1px solid #C9C9C9;
+         padding-bottom: 5px;
+
+         @media screen and (max-width: 767px) {
+            font-size: 9px;
+         }
+      }
+
+      .mini-info{
+         font-size: 12px;
+         font-weight: 400;
+         font-family: 'Poppins', sans-serif;
+         padding-top: 5px;
+         padding-bottom: 10px;
+         @media screen and (max-width: 767px) {
+            padding-bottom: 5px;
+            font-size: 6px;
+         }
+      }
+
+      .button-secondary{
+         font-weight: 400;
+         font-size: 16px;
+         border: 2px solid #FFFFFF;
+         box-shadow: 0 3px 6px rgba(#000000, 0.16);
+         max-width: 160px;
+         padding: 5px 35px;
+
+         &:hover{
+            background: #fff;
+            border: 2px solid #8f8f8f69;
+            color: #05E59C;
+         }
+
+         @media screen and (max-width: 767px) {
+            font-size: 8px;
+            padding: 3px 15px;
+         }
+      }
+   }
+}

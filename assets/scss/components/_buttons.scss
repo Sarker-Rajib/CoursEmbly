@@ -4,15 +4,42 @@
    border-radius: 25px;
    width: 100%;
    max-width: 250px;
-   min-height: 50px;
+   max-height: 50px;
    font-family: 'Montserrat', sans-serif;
    font-weight: 700;
    font-size: 20px;
    border: 2px solid #3D71BA;
+   transition: all 0.3s;
 
    &:hover{
       background: #fff;
       color: #3D71BA;
+   }
+
+
+   @media screen and (max-width: 767px) {
+      font-size: 14px;
+      max-width: 150px;
+      min-height: 35px;
+   }
+}
+
+.button-secondary{
+   background: #05E59C;
+   color: #fff;
+   border-radius: 25px;
+   width: 100%;
+   max-width: 250px;
+   max-height: 50px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   font-size: 20px;
+   border: 2px solid #05E59C;
+   transition: all 0.3s;
+
+   &:hover{
+      background: #fff;
+      color: #05E59C;
    }
 
 
