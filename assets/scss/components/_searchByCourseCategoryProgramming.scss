@@ -1,0 +1,48 @@
+.course-category-programming{
+   padding: 20px 0 40px;
+   
+   .form-wrapper{
+      padding: 40px 0;
+      @media screen and (max-width: 767px) {
+         padding-top: 0;
+      }
+
+      .search-box{
+         @media screen and (max-width: 767px) {
+            width: 308px;
+            height: 40px;
+
+            input{
+               font-size: 9px;
+            }
+
+            .button-primary{
+               font-size: 9px;
+               max-width: 85px;
+               max-height: 25px;
+            }
+         }
+         
+         .button-primary{
+            height: 45px;
+         }
+      }
+   }
+
+   .course-category-and-cards{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-row-gap: 50px;
+      grid-column-gap: 15px;
+      place-items: center;
+
+      @media screen and (max-width: 1199px) {
+         grid-template-columns: repeat(3, 1fr);
+         margin: 0 15px;
+      }
+
+      @media screen and (max-width: 991px) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+}

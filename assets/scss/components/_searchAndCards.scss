@@ -98,7 +98,6 @@
    }
 }
 
-
 // course cards (cards from search by course)
 .course-card{
    width: 100%;
@@ -281,6 +280,122 @@
                line-height: 12px;
                letter-spacing: 0px;
             }
+         }
+      }
+   }
+}
+
+// University cards (cards from search by institute)
+.course-programming-card{
+   width: 100%;
+   max-width: 340px;
+   .image{
+      box-shadow: 0 3px 12px rgba(#000000, 0.16);
+      border-radius: 20px;
+      padding: 15px 15px 30PX;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 270px;
+
+      @media screen and (max-width: 767px) {
+         min-height: 140px;
+         padding: 20px 20px  60PX;
+      }
+
+      &.html{
+         background: rgb(253,234,133);
+         background: linear-gradient(180deg, rgba(253,234,133,1) 0%, rgba(247,147,172,1) 100%);
+      }
+      &.java{
+         background: rgb(64,215,221);
+         background: linear-gradient(180deg, rgba(64,215,221,1) 0%, rgba(85,133,237,1) 100%);
+      }
+      &.language{
+         background: rgb(84,224,141);
+         background: linear-gradient(180deg, rgba(84,224,141,1) 0%, rgba(66,200,171,1) 100%);
+      }
+      &.calculus{
+         background: rgb(222,52,130);
+         background: linear-gradient(180deg, rgba(222,52,130,1) 0%, rgba(166,57,176,1) 100%);
+      }
+
+      &.more-1{
+         background: rgb(164,109,252);
+         background: linear-gradient(0deg, rgba(164,109,252,1) 0%, rgba(220,173,225,1) 100%);
+      }
+      &.more-2{
+         background: rgb(194,230,94);
+         background: linear-gradient(180deg, rgba(194,230,94,1) 0%, rgba(114,227,147,1) 100%);
+      }
+      &.more-3{
+         background: rgb(110,173,255);
+         background: linear-gradient(0deg, rgba(110,173,255,1) 0%, rgba(138,230,254,1) 100%);
+      }
+      &.more-4{
+         background: rgb(98,196,174);
+         background: linear-gradient(180deg, rgba(98,196,174,1) 0%, rgba(51,154,147,1) 100%);
+      }
+   }
+   
+   .details{
+      background: #fff;
+      box-shadow: 0 6px 14px rgba(#000000, 0.22);
+      border-radius: 16px;
+      padding: 15px;
+      width: 90%;
+      margin: auto;
+      margin-top: -60px;
+      position: relative;
+      z-index: 999;
+
+      @media screen and (max-width: 767px) {
+         padding: 15px 10px 5px;
+         margin-top: -50px;
+      }
+
+
+      .title{
+         font-size: 20px;
+         font-weight: 500;
+         font-family: 'Poppins', sans-serif;
+         border-bottom: 1px solid #C9C9C9;
+         padding-bottom: 5px;
+
+         @media screen and (max-width: 767px) {
+            font-size: 9px;
+         }
+      }
+
+      .mini-info{
+         font-size: 12px;
+         font-weight: 400;
+         font-family: 'Poppins', sans-serif;
+         padding-top: 5px;
+         padding-bottom: 15px;
+         @media screen and (max-width: 767px) {
+            padding-bottom: 0px;
+            font-size: 6px;
+         }
+      }
+
+      .button-secondary{
+         font-weight: 400;
+         font-size: 16px;
+         border: 2px solid #FFFFFF;
+         box-shadow: 0 3px 6px rgba(#000000, 0.16);
+         max-width: 160px;
+         padding: 5px 45px;
+
+         &:hover{
+            background: #fff;
+            border: 2px solid #8f8f8f69;
+            color: #05E59C;
+         }
+
+         @media screen and (max-width: 767px) {
+            font-size: 8px;
+            padding: 3px 25px;
          }
       }
    }
