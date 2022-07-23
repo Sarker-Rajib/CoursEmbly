@@ -21,7 +21,7 @@
    }
 }
 
-// University cards (cards from dearch by institute)
+// University cards (cards from search by institute)
 .university-card{
    width: 100%;
    max-width: 340px;
@@ -93,6 +93,194 @@
          @media screen and (max-width: 767px) {
             font-size: 8px;
             padding: 3px 15px;
+         }
+      }
+   }
+}
+
+
+// course cards (cards from search by course)
+.course-card{
+   width: 100%;
+   max-width: 340px;
+   .image{
+      background: #707070;
+      box-shadow: 0 3px 12px rgba(#000000, 0.16);
+      border-radius: 20px;
+      // padding: 25px 25px 100PX;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 385px;
+
+      @media screen and (max-width: 767px) {
+         min-height: 156px;
+      }
+   }
+   
+   .details{
+      background: #fff;
+      box-shadow: 0 6px 14px rgba(#000000, 0.22);
+      border-radius: 16px;
+      padding: 15px;
+      width: 90%;
+      margin: auto;
+      margin-top: -110px;
+      position: relative;
+      z-index: 999;
+      @media screen and (max-width: 767px) {
+         margin-top: -60px;
+         padding: 10px 15px;
+      }
+
+
+      .title{
+         font-size: 20px;
+         font-weight: 500;
+         font-family: 'Poppins', sans-serif;
+         color: #000;
+         @media screen and (max-width: 767px) {
+            font-size: 8px;
+         }
+      }
+
+      .mini-info{
+         font-size: 12px;
+         font-weight: 400;
+         font-family: 'Poppins', sans-serif;
+         padding-top: 5px;
+         padding-bottom: 10px;
+         border-bottom: 1px solid #707070;
+         @media screen and (max-width: 767px) {
+            font-size: 4px;
+            padding-bottom: 5px;
+         }
+      }
+
+      .programmes{
+         padding: 8px 0;
+         @media screen and (max-width: 767px) {
+            padding: 4px 0;
+         }
+         img{
+            @media screen and (max-width: 767px) {
+               max-width: 10px;
+            }
+         }
+
+         span{
+            font-size: 9px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+
+            @media screen and (max-width: 767px) {
+               font-size: 3px;
+            }
+         }
+      }
+
+      .price-buy{
+         align-items: center;
+         .price{
+            color: #1CD899;
+            display: inline-block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+
+            @media screen and (max-width: 767px) {
+               font-size: 9px;
+               line-height: 16px;
+            }
+         }
+
+         .fa-heart{
+            color: #BBBBBB;
+            font-size: 24px;
+
+            @media screen and (max-width: 767px) {
+               font-size: 9px;
+            }
+         }
+      }
+
+      .button-secondary{
+         font-weight: 400;
+         font-size: 16px;
+         border: 2px solid #FFFFFF;
+         box-shadow: 0 3px 6px rgba(#000000, 0.16);
+         max-width: 160px;
+         padding: 5px 35px;
+
+         &:hover{
+            background: #fff;
+            border: 2px solid #8f8f8f69;
+            color: #05E59C;
+         }
+
+         @media screen and (max-width: 767px) {
+            font-size: 7px;
+            padding: 3px 15px;
+         }
+      }
+   }
+}
+
+// course cards (cards from search by instructor)
+.instructor-card{
+   width: 100%;
+   max-width: 340px;
+   background: #707070;
+   box-shadow: 0 3px 12px rgba(#000000, 0.16);
+   border-radius: 20px;
+   min-height: 385px;
+   position: relative;
+   overflow: hidden;
+
+   @media screen and (max-width: 767px) {
+      min-height: 170px;
+   }
+   
+   .instructor-details{
+      background: rgb(0,0,0);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      padding: 50px 30px 30px;
+      width: 100%;
+      margin: auto;
+      position: absolute;
+      bottom: 0;
+      z-index: 999;
+      @media screen and (max-width: 767px) {
+         padding: 15px;
+      }
+
+      .name{
+         font-size: 20px;
+         font-weight: 500;
+         font-family: 'Poppins', sans-serif;
+         color: #fff;
+         padding-bottom: 5px;
+         @media screen and (max-width: 767px) {
+            font-size: 12px;
+         }
+      }
+
+      .skills{
+         p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            margin-right: 5px;
+            line-height: 15px;
+            color: #fff;
+            white-space: pre-line;
+            letter-spacing: 1.5px;
+
+            @media screen and (max-width: 767px) {
+               font-size: 8px;
+               line-height: 12px;
+               letter-spacing: 0px;
+            }
          }
       }
    }

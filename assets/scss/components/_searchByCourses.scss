@@ -1,8 +1,8 @@
-.institute-details{
+.course-category-classes{
    padding: 20px 0 40px;
    
    .form-wrapper{
-      padding: 40px 0 50px;
+      padding: 40px 0;
       @media screen and (max-width: 767px) {
          padding-top: 0;
       }
@@ -29,7 +29,7 @@
       }
    }
 
-   .institute-and-cards{
+   .course-and-cards{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-row-gap: 50px;
@@ -44,7 +44,5 @@
       @media screen and (max-width: 991px) {
          grid-template-columns: repeat(2, 1fr);
       }
-
-
    }
 }
