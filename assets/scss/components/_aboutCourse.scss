@@ -65,3 +65,51 @@
       }
    }
 }
+
+
+.allied-university{
+   padding: 60px 0;
+   @media screen and (max-width: 767px){
+      padding: 30px 0;
+   }
+   .section-heading-bordered{
+      line-height: 28px;
+      &::before{
+         height: 40px;
+      }
+   }
+
+   .university-logos{
+      margin-top: 30px;
+      border: 2px solid rgba(#707070, 0.2);
+      border-radius: 90px;
+      padding: 50px;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      place-items: center;
+
+      @media screen and (max-width: 1399px){
+         grid-template-columns: repeat(6, 1fr);
+         border-radius: 14px;
+         padding: 30px;
+         grid-column-gap: 10px;
+         grid-row-gap: 20px;
+      }
+
+      @media screen and (max-width: 1199px){
+         grid-template-columns: repeat(4, 1fr);
+         border-radius: 14px;
+         padding: 30px;
+         grid-column-gap: 10px;
+         grid-row-gap: 20px;
+      }
+
+      @media screen and (max-width: 767px){
+         grid-template-columns: repeat(3, 1fr);
+         border-radius: 14px;
+         padding: 20px;
+         grid-column-gap: 10px;
+         grid-row-gap: 15px;
+      }
+   }
+}

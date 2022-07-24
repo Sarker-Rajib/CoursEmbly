@@ -32,3 +32,13 @@ body {
     line-height: 78px;
   }
 }
+
+.testimonial{
+  .section-heading-bordered{
+    color: #fff;
+  
+    &::before{
+      background: #ffffff;
+    }
+  }
+}

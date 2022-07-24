@@ -1,31 +1,29 @@
-{
-   var swiper = new Swiper(".brandSwiper", {
-     freeMode: true,
-     autoplay: true,
-     loop: true,
-     breakpoints: {
-       // when window width is >= 320px
-       320: {
-       slidesPerView: 2,
-       spaceBetween: 50,
-       },
-       // when window width is >= 992px
-       576: {
-       slidesPerView: 3,
-       spaceBetween: 50
-       },
-       768: {
-       slidesPerView: 4,
-       spaceBetween: 50
-       },
-       992: {
-       slidesPerView: 5,
-       spaceBetween: 50
-       },
-       1200: {
-       slidesPerView: 6,
-       spaceBetween: 50
-       }
-     }
-   });
- }
+ {
+  var swiper = new Swiper(".TestimonialSwiper", {
+    freeMode: true,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+      slidesPerView: 1,
+      spaceBetween: 60,
+      centeredSlides: true,
+      },
+      // when window width is >= 992px
+      576: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+      },
+      // when window width is >= 1400px
+      1400: {
+      slidesPerView: 3,
+      spaceBetween: 55,
+      centeredSlides: true,
+      }
+    }
+  });
+}
