@@ -1,0 +1,121 @@
+.update-profile{
+   padding: 60px 0;
+
+   .profile-details{
+      border-radius: 32px;
+      box-shadow: 0 3px 30px rgba(#000000, 0.16);
+      background: url(../images/update-profile/bg.png) no-repeat bottom left/contain;
+      padding: 40px;
+
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+         background: none;
+      }
+      @media screen and (max-width: 767px){
+         padding: 25px;
+         min-height: 570px;
+      }
+
+      .personel-details{
+         padding-bottom: 50px;
+         @media screen and (max-width: 767px){
+            padding-bottom: 15px;
+         }
+
+         .image{
+            position: relative;
+            img{
+               @media screen and (max-width: 767px){
+                  max-width: 120px;
+                  position: absolute;
+                  top: -80px;
+               }
+            }
+         }
+         .title{
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 50px;
+            text-shadow: 0 3px 23px rgba(#000000, 0.16);
+            @media screen and (max-width: 767px){
+               font-size: 24px;
+               padding-left: 120px;
+               line-height: 25px;
+               padding-bottom: 15px;
+            }
+         }
+         p{
+            color: #1C234A;
+            opacity: 0.48;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            @media screen and (max-width: 767px){
+               font-size: 12px;
+               line-height: 19px;
+            }
+         }
+      }
+
+      .carrier-details{
+         .detail-item{
+            display: flex;
+            align-items: center;
+
+            .image{
+               flex-shrink: 0;
+
+               img{
+                  @media screen and (max-width: 767px){
+                     max-width: 48px;
+                  }
+               }
+            }
+
+            .details{
+               padding-left: 15px;
+               
+               @media screen and (max-width: 767px){
+                  padding-left: 8px;
+               }
+
+               .title{
+                  color: #1C234A;
+                  opacity: 0.48;
+                  font-size: 18px;
+                  font-weight: 500;
+                  line-height: 26px;
+                  padding-bottom: 10px;
+
+                  @media screen and (max-width: 767px){
+                     font-size: 10px;
+                     padding-bottom: 5px;
+                  }
+               }
+
+               .number{
+                  font-size: 44px;
+                  font-weight: 500;
+                  line-height: 26px;
+
+                  @media screen and (max-width: 767px){
+                     font-size: 22px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+
+   .course-and-cards{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 40px;
+      grid-column-gap: 30px;
+      place-items: center;
+
+      @media screen and (max-width: 991px){
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+}

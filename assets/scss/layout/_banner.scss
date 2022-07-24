@@ -1,0 +1,113 @@
+
+
+
+
+
+
+
+
+
+
+.course-banner-details{
+   .description{
+      .mega-heading{
+         font-family: "Octarine-Bold";
+         font-size: 50px;
+         line-height: 61px;
+         color: #282E44;
+
+         @media screen and (max-width: 768px) {
+            font-size: 25px;
+            line-height: 27px;
+         }
+      }
+
+      .mini-detail{
+         font-family: 'Karla', sans-serif;
+         font-size: 20px;
+         font-weight: 400;
+         line-height: 27px;
+         color: #282E44;
+
+         @media screen and (max-width: 768px) {
+            font-size: 10px;
+            line-height: 16px;
+         }
+      }
+
+      .rating{
+         display: flex;
+         align-items: center;
+         padding: 25px 0 50px;
+
+         .stars{
+            color: #F8BA54;
+            font-size: 22px;
+            @media screen and (max-width: 768px) {
+               font-size: 18px;
+            }
+         }
+
+         .counts{
+            font-family: 'Karla', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #282E44;
+            margin-left: 10px;
+   
+            @media screen and (max-width: 768px) {
+               font-size: 12px;
+               line-height: 16px;
+            }
+         }
+      }
+
+      .detailed-description{
+         .section-header{
+            font-family: "Octarine-Bold";
+            font-size: 30px;
+            padding-left: 20px;
+            line-height: 78px;
+            position: relative;
+          
+            &::before{
+              content: "";
+              position: absolute;
+              height: 45%;
+              left: 0;
+              top: 50%;
+              transform: translateY(-70%);
+              width: 9px;
+              background: #3D71BA;
+          
+            }
+          
+          
+            @media screen and (max-width: 768px) {
+              font-size: 24px;
+              line-height: 78px;
+            }
+         }
+
+         .items{
+            padding: 20px 0;
+            .item-header{
+               font-weight: 600;
+               font-size: 22px;
+               line-height: 35px;
+
+               .fa-check{
+                  color: #05E59C;
+                  margin-right: 8px;
+               }
+            }
+            p{
+               font-weight: 400;
+               font-size: 18px;
+               line-height: 26px;
+            }
+         }
+      }
+   }
+}

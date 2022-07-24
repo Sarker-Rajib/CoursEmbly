@@ -4,3 +4,31 @@ body {
   font-family: 'Poppins', sans-serif;
   color: variables.$color-black;
 }
+
+
+.section-heading-bordered{
+  font-family: "Octarine-Bold";
+  font-size: 40px;
+  padding-left: 20px;
+  line-height: 78px;
+  position: relative;
+  display: inline-block;
+
+  &::before{
+    content: "";
+    position: absolute;
+    height: 45%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-70%);
+    width: 9px;
+    background: #3D71BA;
+
+  }
+
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 78px;
+  }
+}
