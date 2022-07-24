@@ -1,5 +1,9 @@
-.update-profile{
+.uploader-profile{
    padding: 60px 0;
+
+   .container{
+      max-width: 1400px;
+   }
 
    .profile-details{
       border-radius: 32px;
@@ -117,21 +121,5 @@
       @media screen and (max-width: 991px){
          grid-template-columns: repeat(2, 1fr);
       }
-   }
-}
-
-.courses-frequently-brought{
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-row-gap: 40px;
-   grid-column-gap: 30px;
-   place-items: center;
-
-   @media screen and (max-width: 1399px){
-      grid-template-columns: repeat(3, 1fr);
-   }
-
-   @media screen and (max-width: 991px){
-      grid-template-columns: repeat(2, 1fr);
    }
 }
