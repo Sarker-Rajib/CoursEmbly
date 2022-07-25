@@ -1,11 +1,81 @@
+// css starts for Home banner
+.home-banner{
+   height: 100vh;
+   background: url(../images/Home-bg.png) center center/cover;
+   display: flex;
+   align-items: center;
 
+   @media screen and (max-width: 768px){
+      background: url(../images/home-bg-mobile.png) center center/cover;
+      align-items:flex-start;
+      padding: 120px 30px 40px;
+      
+   }
 
+   h1{
+      font-size: 65px;
+      font-family: "Octarine-Bold";
+      line-height: 78px;
+      color: #282E44;
 
+      @media screen and (max-width: 1399px){
+         font-size: 55px;
+         line-height: 65px;
+      }
 
+      @media screen and (max-width: 1199px){
+         font-size: 45px;
+         line-height: 55px;
+      }
 
+      @media screen and (max-width: 768px){
+         font-size: 24px;
+         line-height: 25px;  
+         text-align: center;       
+      }
+   }
 
+   p{
+      color: #02395B;
+      font-weight: 400;
+      font-size: 30px;
+      font-family: 'Karla', sans-serif;
+      @media screen and (max-width: 768px){
+         font-size: 11px;
+         line-height: 18px;  
+         text-align: center;       
+      }
+   }
 
+   .form-wrapper{
+      padding: 60px 0;
+      @media screen and (max-width: 768px){
+         padding: 25px 0;     
+      }
 
+      .search-box{
+         background: #fff;
+         width: 100%;
+         max-width: 750px;
+
+         input{
+            @media screen and (max-width: 768px){
+               font-size: 8px;
+            }
+         }
+       
+         .button-primary{
+            min-height: 50px;
+
+            @media screen and (max-width: 768px){
+               font-size: 6px;
+               min-height: 25px;
+               max-width: 80px;
+            }
+         }
+      }
+   }
+}
 
 
 .course-banner-details{

@@ -22,16 +22,16 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="home">
 
   <!-- === header section start === -->
-  <!-- <header class="header">
-    <nav class="navbar">
-      <div class="container-fluid">
+  <header class="home-header">
+    <div class="container">
+      <nav class="navbar navbar-expand">
         <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/images/Brand-logo.png" alt="image"></a>
 
         <div class="collapse navbar-collapse" id="nav-toggle">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
               <a class="nav-link" href="#">Become an Instructor</a>
             </li>
@@ -39,15 +39,39 @@
               <a class="nav-link" href="#">SignUp</a>
             </li>
             <li class="nav-item">
-              <a class="btn button-secondary" href="#">LOGIN</a>
+              <a href="#"><span class="btn button-secondary d-none d-lg-block" >LOGIN</span> <span class="d-block d-lg-none"><img src="assets/images/user.png" alt="User" ></span></a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav> 
-  </header> -->
+      </nav> 
+    </div>
+  </header>
   <!-- ===//end of header section === -->
 
+
+    <!-- === main-banner section start === -->
+    <section class="home-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+
+            <div class="form-wrapper d-flex justify-content-center align-items-center">
+              <form class="w-100">
+                <div class="search-box d-flex align-items-center justify-content-between">
+                  <input type="text" placeholder="Find Your Course Here">
+                  <button class="button-primary"><i class="fal fa-search me-1 me-md-3"></i>SEARCH</button>
+                  </div>
+                </form>
+            </div>
+          </div>
+
+          <div class="col-lg-5"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ===//end of main-banner section === -->
 
 
   <!-- === newslatter section start === -->

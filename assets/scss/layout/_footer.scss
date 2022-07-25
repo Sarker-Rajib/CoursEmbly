@@ -42,10 +42,14 @@
       .social-links{
          display: flex;
          align-items: center;
+         li{
+            a{
+               margin-right: 15px;
+            }
+         }
 
          .fab{
             color: #3D71BA;
-            margin-right: 15px;
             font-size: 35px;
          }
       }
