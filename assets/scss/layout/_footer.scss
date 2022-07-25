@@ -51,6 +51,11 @@
          .fab{
             color: #3D71BA;
             font-size: 35px;
+            transition: all 0.25s;
+
+            &:hover{
+               color: #1abb9b;
+            }
          }
       }
    
