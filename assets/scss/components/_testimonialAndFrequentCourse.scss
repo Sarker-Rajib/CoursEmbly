@@ -1,12 +1,56 @@
 .testimonial{
+   padding: 100px 0;
+   background: url(../images/Course-Priview/testimonial-bg.png) no-repeat center center/cover;
+   background-size: 100% 100%;
+
    .section-heading-bordered{
-     color: #fff;
-   
-     &::before{
-       background: #ffffff;
-     }
+      color: #fff;
+    
+      &::before{
+        background: #ffffff;
+      }
+    }
+
+   .testimonial-card{
+      text-align: center;
+      padding: 20px 30px 30px;
+      background: #fff;
+
+      .title{
+         font-family: "Baskervville-Regular";
+         font-size: 22px;
+         line-height: 26px;
+         padding: 20px 10px;
+
+         @media screen and (max-width: 767px) {
+            font-size: 20px;            
+         }
+      }
+
+      p{
+         font-family: 'Raleway', sans-serif;
+         font-size: 18px;
+         line-height: 25px;
+         @media screen and (max-width: 767px) {
+            font-size: 12px;            
+         }
+      }
+   }
+
+   .testimonials{
+      padding: 0 50px;
+      margin: 0 30px;
+      @media screen and (max-width: 767px) {
+         margin: 0;        
+      }
+
+      .swiper-button-prev, .swiper-button-next{
+         color: #fff;
+      }
    }
 }
+
+
 
 .frequent-courses{
    padding: 60px 0;

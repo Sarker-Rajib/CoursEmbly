@@ -13,6 +13,7 @@ body {
   line-height: 78px;
   position: relative;
   display: inline-block;
+  color: #282E44;
 
   &::before{
     content: "";
@@ -23,7 +24,6 @@ body {
     transform: translateY(-70%);
     width: 9px;
     background: #3D71BA;
-
   }
 
 

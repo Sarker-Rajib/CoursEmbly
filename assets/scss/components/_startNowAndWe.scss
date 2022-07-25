@@ -1,0 +1,131 @@
+.start-now{
+   padding: 80px 0 ;
+
+   .inner-showcase{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 50px;
+      @media screen and (max-width: 1199px){
+         grid-gap: 30px;
+      }
+      @media screen and (max-width: 991px){
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 15px;
+      }
+      @media screen and (max-width: 767px){
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 15px;
+      }
+
+      .item{
+         box-shadow: 0 3px 10px rgba(#000000, 0.16);
+         border-radius: 16px;
+         transition: all 0.3s;
+
+         .content-wrapper{
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: 767px){
+               padding: 20px;
+            }
+         }
+
+         h6{
+            padding-top: 40px;
+            padding-bottom: 10px;
+            font-family: "Octarine-Bold";
+            font-size: 25px;
+            line-height: 21px;
+            color: #000000;
+
+            
+            @media screen and (max-width: 767px){
+               padding-top: 20px;
+               padding-bottom: 8px;
+               font-size: 14px;
+               line-height: 11px;
+            }
+         }
+
+         p{
+            font-family: 'Karla', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: rgba(#02395B, 0.67);
+
+            @media screen and (max-width: 767px){
+               font-size: 10px;
+               line-height: 11px;
+            }
+         }
+
+         .view-more{
+            padding: 0px;
+            font-family: "Octarine-Bold";
+            font-size: 25px;
+            line-height: 21px;
+            text-decoration: underline;
+         }
+
+         &.active{
+            background: #3D71BA;
+
+            h6, p{
+               color: #fff;
+            }
+         }
+
+         &:hover{
+            background: #3D71BA;
+
+            h6, p, a{
+               color: #fff;
+            }
+         }
+      }
+   }
+}
+
+.who-we-are{
+   padding: 110px 0;
+   background: url(../images/course-priview/testimonial-bg.png) no-repeat center center/cover;
+   @media screen and (max-width: 767px) {
+      padding: 60px 0;
+   }
+
+
+   .section-heading-bordered{
+      color: #fff;
+
+      &::before{
+         background: #fff;
+      }
+   }
+
+   .video{
+      max-width: 900px;
+      margin: auto;
+   }
+
+   p{
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 400;
+      color:#fff;
+      text-align: center;
+      padding: 15px 0;
+
+      @media screen and (min-width: 1199px) {
+         white-space: pre-line;         
+      }
+      @media screen and (max-width: 767px) {
+         font-size: 14px;
+         line-height: 20px;  
+      }
+   }
+}
