@@ -78,9 +78,11 @@
 }
 
 
+// course priview banner
 .course-banner-details{
-   padding-top: 60px;
    .description{
+      padding-top: 60px;
+
       .mega-heading{
          font-family: "Octarine-Bold";
          font-size: 50px;
@@ -133,52 +135,65 @@
             }
          }
       }
+   }
 
-      .detailed-description{
-         .section-header{
-            font-family: "Octarine-Bold";
-            font-size: 30px;
-            padding-left: 20px;
-            line-height: 78px;
-            position: relative;
-          
-            &::before{
-              content: "";
-              position: absolute;
-              height: 45%;
-              left: 0;
-              top: 50%;
-              transform: translateY(-70%);
-              width: 9px;
-              background: #3D71BA;
-          
-            }
-          
-          
-            @media screen and (max-width: 768px) {
-              font-size: 24px;
-              line-height: 78px;
+   
+   .detailed-description{
+      .section-header{
+         font-family: "Octarine-Bold";
+         font-size: 30px;
+         padding-left: 20px;
+         line-height: 78px;
+         position: relative;
+       
+         &::before{
+           content: "";
+           position: absolute;
+           height: 45%;
+           left: 0;
+           top: 50%;
+           transform: translateY(-70%);
+           width: 9px;
+           background: #3D71BA;
+       
+         }
+       
+       
+         @media screen and (max-width: 768px) {
+           font-size: 24px;
+           line-height: 78px;
+         }
+      }
+
+      .items{
+         padding: 20px 0;
+         .item-header{
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 35px;
+
+            .fa-check{
+               color: #05E59C;
+               margin-right: 8px;
             }
          }
-
-         .items{
-            padding: 20px 0;
-            .item-header{
-               font-weight: 600;
-               font-size: 22px;
-               line-height: 35px;
-
-               .fa-check{
-                  color: #05E59C;
-                  margin-right: 8px;
-               }
-            }
-            p{
-               font-weight: 400;
-               font-size: 18px;
-               line-height: 26px;
-            }
+         p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
          }
+      }
+   }
+
+   .video-and-wrapper{
+      padding: 60px 20px 0;
+      background: url(../images/Course-Priview/bg-rt.png) no-repeat center top/cover;
+
+      .video-details{
+         font-size: 20px;
+         font-weight: 400;
+         color: #fff;
+         padding: 20px 0 50px;
       }
    }
 }

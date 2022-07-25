@@ -401,3 +401,126 @@
       }
    }
 }
+
+// instructor-detailed-card (card from course-preview institute)
+.instructor-detailed-card{
+   background: #fff;
+   box-shadow: 0 0 71px rgba(#1C2136 , 0.14);
+   border-radius: 25px;
+   max-width: 540px;
+   margin: auto;
+   padding: 25px;
+
+   .card-top-section{
+      border: 1px solid #1ABB9B;
+      border-radius: 20px;
+      padding: 10px;
+
+      img{
+         max-width: 100px;
+      }
+
+      .instructor-details{
+         .title{
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 35px;
+            color: #333333;
+         }
+         .institute{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #1ABB9B;
+         }
+         .duration{
+            color: #787878;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 26px;
+         }
+      }
+   }
+
+   .pricing-and-buy{
+      .price-tag{
+         .current-price{
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 19px;
+            color: #1ABB9B;
+         }
+         .cut-off{
+            color: #787878;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+         }
+      }
+
+      .button-cart{
+         border-radius: 10px;
+         border: 3px solid #fff;
+         background: #1ABB9B;
+         box-shadow: 0 6px 9px rgba(#000000, 0.16);
+         color: #fff;
+         padding: 8px;
+         margin: 5px 0;
+
+         &:hover{
+            background: #3D71BA;
+            border: 3px solid #1abb9b62;
+         }
+      }  
+
+      .button-buy{
+         border-radius: 10px;
+         border: 3px solid #fff;
+         background: #3D71BA;
+         box-shadow: 0 6px 9px rgba(#000000, 0.16);
+         color: #fff;
+         padding: 8px;
+         margin: 5px 0;
+
+         &:hover{
+            background: #1ABB9B;
+            border: 3px solid #3d71ba4b;
+         }
+      }
+   }
+
+   .contact-instructor{
+      h3{
+         font-size: 25px;
+         font-weight: 600;
+         line-height: 35px;
+      }
+
+      p{
+         font-size: 18px;
+         font-weight: 400;
+         line-height: 26px;
+      }
+
+      input{
+         font-weight: 400;
+         font-size: 18px;
+         border-radius: 10px;
+         border: 2px solid #A7A7A7;
+
+         &::placeholder{
+            color: #BBBBBB;
+         }
+      }
+
+      .submit{
+         border-radius: 10px;
+         border: 3px solid #fff;
+         background: #BBBBBB;
+         box-shadow: 0 6px 9px rgba(#000000, 0.16);
+         color: #fff;
+         padding: 8px;
+         margin: 5px 0;
+      }
+   }
+}
