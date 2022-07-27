@@ -1,11 +1,15 @@
 .home{
    .container{
-      max-width: 1400px;
+      @media screen and (min-width: 1450px){
+         max-width: 1400px;
+      }
    }
 }
 
 .course-preview-page{
    .container{
-      max-width: 1400px;
+      @media screen and (min-width: 1450px){
+         max-width: 1400px;
+      }
    }
 }

@@ -62,6 +62,7 @@
   </header>
   <!-- ===//end of header section === -->
 
+  <!-- main contwnts -->
   <main>
     <section class="course-contents-and-faq">
       <div class="container-fluid">
@@ -76,6 +77,26 @@
                     </div>
                     <div class="progress">
                       <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="course-content-display mt-3 d-block d-xl-none">
+                    <div class="contents-header d-flex align-items-center justify-content-between">
+                      <h5>Video Transcript</h5>
+                      <a href="#" class="btn button-secondary">Save and Next <i class="far fa-chevron-right ms-2"></i></a>
+                    </div>
+
+                    <div class="inner-main-contents">
+                      <div class="ratio ratio-16x9 overflow-hidden border-12">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vr0qNXmkUJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+
+                      <div class="video-transcript pt-3">
+                        <h2 class="py-3">Video Transcript</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaveniam, quis nostrud ore eu fugiat nulla pari non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                          </p>
+                      </div>
                     </div>
                   </div>
   
@@ -93,27 +114,27 @@
 
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <button class="accordion-button index-header unlocked" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               Title 1 - Introduction <span class="ms-auto">3/5</span>
                           </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#courseMenuAccordio">
                           <div class="accordion-body">
                               <ul>
-                                  <li>
+                                  <li class="unlocked">
                                     <a href="#">
                                       <h6>Sub Title 1 - Intro</h6>
                                       <p>Video - 5 Min</p>
                                     </a>
                                   </li>
-                                  <li>
+                                  <li class="unlocked">
                                     <a href="#">
                                       <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
                                       <p>PDF - 234kb</p>
                                     </a>
                                   </li>
-                                  <li>
-                                    <a href="#">
+                                  <li class="unlocked">
+                                    <a href="#" class="current">
                                       <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
                                       <p>Download</p>
                                     </a>
@@ -137,7 +158,7 @@
 
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Title 2 - Introduction <span class="ms-auto">0/5</span>
                           </button>
                         </h2>
@@ -181,7 +202,7 @@
 
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Title 4 - Introduction <span class="ms-auto">0/5</span>
                           </button>
                         </h2>
@@ -225,7 +246,7 @@
 
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             Title 5 - Introduction <span class="ms-auto">0/5</span>
                           </button>
                         </h2>
@@ -269,7 +290,7 @@
 
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingSix">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                             Title 6 - Introduction <span class="ms-auto">0/5</span>
                           </button>
                         </h2>
@@ -313,7 +334,7 @@
 
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingSeven">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                             Title 7 - Introduction <span class="ms-auto">0/5</span>
                           </button>
                         </h2>
@@ -357,7 +378,7 @@
 
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingEight">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                             Title 8 - Introduction <span class="ms-auto">0/5</span>
                           </button>
                         </h2>
@@ -401,7 +422,7 @@
 
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingNine">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                          <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                             Title 9 - Introduction <span class="ms-auto">0/5</span>
                           </button>
                         </h2>
@@ -445,7 +466,7 @@
 
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTen">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                          <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                             Title 10 - Introduction <span class="ms-auto">0/5</span>
                           </button>
                         </h2>
@@ -489,7 +510,7 @@
                         
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingEleven">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                          <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
                             Title 11 - Introduction <span class="ms-auto">0/5</span>
                           </button>
                         </h2>
@@ -533,7 +554,7 @@
 
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwelve">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                          <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
                             Title 12 - Introduction <span class="ms-auto">0/5</span>
                           </button>
                         </h2>
@@ -580,15 +601,15 @@
                 </div>
     
                 <div class="col-xl-9">
-                  <div class="course-content-display">
+                  <div class="course-content-display d-none d-xl-block">
                     <div class="contents-header d-flex align-items-center justify-content-between">
                       <h5>Video Transcript</h5>
-                      <a href="#" class="btn  button-secondary">Save and Next <i class="far fa-chevron-right ms-2"></i></a>
+                      <a href="#" class="btn button-secondary">Save and Next <i class="far fa-chevron-right ms-2"></i></a>
                     </div>
 
                     <div class="inner-main-contents">
-                      <div class="ratio ratio-16x9">
-                        <img src="assets/images/vide-thumb-2.png" alt="video-thumbnail" class="img-fluid">
+                      <div class="ratio ratio-16x9 overflow-hidden border-12">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vr0qNXmkUJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
 
                       <div class="video-transcript pt-3">
@@ -604,7 +625,7 @@
           </div>
   
           <div class="faq-description">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs nav-menu" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="Questions-tab" data-bs-toggle="tab" data-bs-target="#Questions-tab-pane" type="button" role="tab" aria-controls="Questions-tab-pane" aria-selected="true">Questions</button>
                 </li>
@@ -615,74 +636,81 @@
                   <button class="nav-link" id="Tab3-tab" data-bs-toggle="tab" data-bs-target="#Tab3-tab-pane" type="button" role="tab" aria-controls="Tab3-tab-pane" aria-selected="false">Tab 3</button>
                 </li>
             </ul>
-            <div class="tab-content" id="myTabContent">
+            
+            <div class="tab-content describe-area" id="myTabContent">
               <div class="tab-pane fade show active" id="Questions-tab-pane" role="tabpanel" aria-labelledby="Questions-tab" tabindex="0">
                 <!-- content composition -->
                 <div class="comment-section">
-                  <form class="form-control">
+                  <form class="form-control border-0 p-0">
                     <div class="text-area w-100 position-relative">
-                      <textarea name="Faq" class="form-control" rows="10" placeholder="Add a New Question"></textarea>
+                      <textarea name="Faq" class="form-control writing-field" rows="10" placeholder="Add a New Question"></textarea>
                       <span class="charecter-count position-absolute bottom-0 end-0 pe-3 pb-2">0/1000 charecters</span>
                     </div>
-                    <div class="d-flex justify-content-end align-items-center">
-                      <p class="pe-4">Comment at 2:59</p>
-                      <a href="#" class="btn btn-primary">Comment</a>
+                    <div class="d-flex justify-content-md-end align-items-center pt-3 flex-column flex-md-row justify-content-center">
+                      <p class="pe-md-4"><span><input type="checkbox"></span> Comment at <span>2:59</span></p>
+                      <a href="#" class="btn btn-comment">Comment <i class="far fa-chevron-right ms-2"></i></a>
                     </div>
                   </form>
-
-                  <div class="question-and-answer">
+                  <hr>
+                  <div class="question-and-answer pt-3 pt-md-4">
                     <div class="item-question d-flex align-items-start">
                       <div class="image flex-shrink-0">
                         <img src="assets/images/faq/1.png" alt="image" class="img-fluid">
                       </div>
                       <div class="text">
-                        <h5 class="title">Sabrina R. Schneider <span>online</span></h5>
+                        <h5 class="title">Sabrina R. Schneider <span class="online-status online">online</span></h5>
                         <p class="date">29 May 2022</p>
 
-                        <div class="question">
+                        <p class="question pt-4">
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaveniam, quis nostrud ore eu fugiat nulla pari non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        </div>
-                        <div class="d-flex justify-content-end">
-                          <a href="#" class="reply">Reply</a>
-                          <a href="#" class="expand">Expand</a>
+                        </p>
+                        <div class="d-flex justify-content-end buttons">
+                          <a href="#" class="reply"><i class="fas fa-reply me-2"></i> Reply</a>
+                          <a href="#" class="expand"><i class="fas fa-expand-alt me-2"></i>Expand</a>
                         </div>
 
                         <!-- reply -->
-                        <div class="item-reply">
+                        <div class="item-reply pt-3">
                           <div class="d-flex align-items-start">
                             <div class="image flex-shrink-0">
                               <img src="assets/images/faq/2.png" alt="image" class="img-fluid">
                             </div>
                             <div class="text">
-                              <h5 class="title">Sabrina R. Schneider <span>Less Than Minute Ago</span></h5>
+                              <h5 class="title">Jose V. <span class="d-none d-md-inline-block">Siler</span>
+                                <span class="online-status offline d-none d-md-inline-block">Less Than Minute Ago</span>
+                                <span class="online-status offline d-inline-block d-md-none">offline</span>
+                              </h5>
                               <p class="date">29 May 2022</p>
       
-                              <div class="question">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaveniam, quis nostrud ore eu fugiat nulla pari non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                              </div>
-                              <div class="d-flex justify-content-end">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="expand">Expand</a>
+                              <p class="question pt-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaveniam, quis nostrud ore eu fugiat nulla pari non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                              </p>
+                              <div class="d-flex justify-content-end buttons">
+                                <a href="#" class="reply"><i class="fas fa-reply me-2"></i> Reply</a>
+                                <a href="#" class="expand"><i class="fas fa-expand-alt me-2"></i>Expand</a>
                               </div>
                             </div>
                           </div>
                         </div>
 
-                        <div class="item-reply">
+                        <div class="item-reply pt-3">
                           <div class="d-flex align-items-start">
                             <div class="image flex-shrink-0">
                               <img src="assets/images/faq/3.png" alt="image" class="img-fluid">
                             </div>
                             <div class="text">
-                              <h5 class="title">Sabrina R. Schneider <span>Less Than Minute Ago</span></h5>
+                              <h5 class="title">Reginald V. <span class="d-none d-md-inline-block">Wade</span>
+                                <span class="online-status offline d-none d-md-inline-block">Less Than Minute Ago</span>
+                                <span class="online-status offline d-inline-block d-md-none">offline</span>
+                              </h5>
                               <p class="date">29 May 2022</p>
       
-                              <div class="question">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaveniam, quis nostrud ore eu fugiat nulla pari non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                              </div>
-                              <div class="d-flex justify-content-end">
-                                <a href="#" class="reply">Reply</a>
-                                <a href="#" class="expand">Expand</a>
+                              <p class="question pt-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaveniam, quis nostrud ore eu fugiat nulla pari non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                              </p>
+                              <div class="d-flex justify-content-end buttons">
+                                <a href="#" class="reply"><i class="fas fa-reply me-2"></i> Reply</a>
+                                <a href="#" class="expand"><i class="fas fa-expand-alt me-2"></i>Expand</a>
                               </div>
                             </div>
                           </div>
@@ -690,13 +718,37 @@
                       </div>
                     </div>
 
-                    <div class="item-question d-flex align-items-start">
+                    <div class="item-question d-flex align-items-start pt-3 pt-md-4">
                       <div class="image flex-shrink-0">
                         <img src="assets/images/faq/1.png" alt="image" class="img-fluid">
                       </div>
                       <div class="text w-100">
-                        <form class="w-100">
-                          <textarea class="form-control" name="comment" rows="5"></textarea>
+                        <form class="form-control border-0">
+                          <div class="text-area w-100 position-relative">
+                            <textarea name="Faq" class="form-control writing-field bg-white" rows="6" placeholder="Type here"></textarea>
+                            
+                          </div>
+                          <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-3">
+                            <div class="input-files d-flex pb-2 pb-md-0">
+                              <div class="me-1 me-md-3">
+                                <input type="file" class="d-none" id="image">
+                                <label for="image"><i class="fas fa-image me-0 me-md-1"></i> Image</label>
+                              </div>
+                              <div class="me-1 me-md-3">
+                                <input type="file" class="d-none" id="video">
+                                <label for="video"><i class="fas fa-video me-0 me-md-1"></i>Video</label>
+                              </div>
+                              <div class="me-1 me-md-3">
+                                <input type="file" class="d-none" id="tab1">
+                                <label for="tab1"><i class="fas fa-question-circle me-0 me-md-1"></i>Tab</label>
+                              </div>
+                              <div>
+                                <input type="file" class="d-none" id="tab2">
+                                <label for="tab2"><i class="fas fa-question-circle me-0 me-md-1"></i>Tab</label>
+                              </div>
+                            </div>
+                            <a href="#" class="btn btn-comment mx-4">Submit <i class="far fa-chevron-right ms-2"></i></a>
+                          </div>
                         </form>
                       </div>
                     </div>
@@ -714,7 +766,7 @@
 
 
     <!-- === newslatter section start === -->
-    <section class="newslatter max-1845">
+    <section class="newslatter">
       <div class="container">
         <div class="content-wrapper">
           <div class="row align-items-center gy-3 gy-lg-0">
@@ -738,6 +790,7 @@
     </section>
     <!-- ===//end of newslatter section === -->
   </main>
+  <!-- main section ended -->
   
   
   <!-- === footer starts from here -->
