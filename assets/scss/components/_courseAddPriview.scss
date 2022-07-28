@@ -1,0 +1,322 @@
+.course-add{
+   .container-fluid{
+      @media screen and (min-width: 1900px){
+         max-width: 1845px;
+      }
+   }
+
+   .content-wrapper{
+      background: #fff;
+      box-shadow: 0 3px 6px rgba(#000000, 0.16);
+      border-radius: 11px;
+      margin-top: 30px;
+      padding: 30px;
+      @media screen and (max-width: 767px){
+         padding: 10px;
+      }
+
+      .course-menu{
+
+         .wrapping-main{
+            position: relative;
+
+            &::after{
+               content: "";
+               position: absolute;
+               width: 100%;
+               height: 80px;
+               bottom: 0;
+               left: 0;
+               background: rgb(255,255,255);
+               background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+               z-index: 999;
+            }
+         }
+
+         .progres-head{
+            background: #3D71BA;
+            padding: 18px;
+            border-radius: 10px;
+
+            .title-calculus{
+               padding-bottom: 8px;
+               h5{
+                  font-family: "OpenSans-Bold";
+                  font-size: 22px;
+                  color: #fff;
+               }
+               
+               p{
+                  color: #fff;
+                  font-family: "OpenSans-Bold";
+                  font-size: 15px;
+                  display: inline-block;
+                  background: #4893CB;
+                  border-radius: 9px;
+                  padding: 6px 8px;
+               }
+            }
+
+            .progress{
+               height: 10px;
+               border-radius: 10px;
+               background-color: rgba(#fff, 0.25);
+               overflow: hidden;
+               
+               .progress-bar{
+                  border-radius: 10px;
+                  background-color: #fff;
+               }
+            }
+         }
+
+         .search{
+            margin: 15px 0; 
+            background: #EEF2FB;
+            border-radius: 9px;
+
+            input{
+               background: transparent;
+               font-weight: 500;
+               font-size: 18px;
+               border: 0;
+               padding-left: 20px;
+               width: calc(100% - 60px);
+               display: inline-block;
+
+               &::placeholder{
+                  color: #B7BDC6;
+               }
+            }
+
+            .btn-search{
+               background: #3D71BA;
+               color: #fff;
+               font-size: 25px;
+               max-width: 50px;
+            }
+         }
+
+         .menu-wrapper{
+            max-height: 80vh;
+            overflow: auto;
+
+            /* width of scroll bar */
+            &::-webkit-scrollbar {
+               width: 0px;
+            }
+
+            .accordion{
+               
+               .accordion-item{
+                  margin-bottom: 20px;
+                  border-radius: 9px;
+                  background: #3D71BA;
+                  overflow: hidden;
+                  position: relative;
+   
+                  &::before{
+                     position: absolute;
+                     content: "";
+                     background:rgba(#FFFFFF, 0.70);
+                     height: calc(100% - 80px);
+                     width: 2px;
+                     top: 52px;
+                     left: 25px;
+                     z-index: 1;
+                  }
+      
+                  .accordion-header{
+                     position: relative;
+                     z-index: 111;
+                     .index-header{
+                        background: #17407A;
+                        border-radius: 9px;
+                        font-weight: 500;
+                        font-size: 17px;
+                        color: #fff;
+                        padding-left: 45px;
+
+                        .add-new{
+                           position: relative;
+                           z-index: 999999999999;
+                        }
+   
+                        &::after{
+                           display: none;
+                        }
+                        &:focus{
+                           box-shadow: none;
+                        }
+   
+                        &.unlocked{
+                           &::before{
+                              background: url(../images/round-checked-borderless.png) center center/contain;
+                           }
+                        }
+                     }
+                  }
+      
+                  .accordion-body{
+                     padding: 0;
+                     ul{
+                        padding: 10px 0;
+                        li{
+                           position: relative;
+                           a{
+                              display: inline-block;
+                              width: 100%;
+                              padding: 15px 0;
+      
+                              &:hover{
+                                 background: #17407A;
+                              }
+                              
+                              &.current{
+                                 background: #17407A;
+                              }
+                           }
+                           h6{
+                              padding-left: 55px;
+                              font-size: 16px;
+                              font-weight: 400;
+                              color: #F1F1F1;
+                              line-height: 25px;
+                           }
+                           p{
+                              padding-left: 55px;
+                              font-size: 12px;
+                              font-weight: 400;
+                              color: #BFBFBF;
+                              line-height: 18px;
+                           }
+   
+                           // &::before{
+                           //    position: absolute;
+                           //    content: "";
+                           //    background: url(../images/round-blue.png) center center/contain;
+                           //    height: 26px;
+                           //    width: 26px;
+                           //    top: 50%;
+                           //    transform: translateY(-50%);
+                           //    left: 10px;
+                           //    z-index: 99999;
+                           // }
+   
+                           &.unlocked{
+                              &::before{
+                                 background: url(../images/round-blue-checked.png) center center/contain;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .course-content-display{
+         box-shadow: 0 2px 6px rgba(#000000, 0.16);
+         border-radius: 9px;
+         overflow: hidden;
+
+         .contents-header{
+            background: #3D71BA;
+            padding: 10px 25px;
+
+            h5{
+               color: #FFFFFF;
+               font-size: 22px;
+               font-weight: 500;
+            }
+            
+            .button-secondary{
+               font-weight: 500;
+               font-size: 20px;
+               border-radius: 25px;
+               min-width: 160px;
+
+               
+               &.dark{
+                  background: #17407A;
+                  border: 2px solid #17407A;
+
+                  &:hover{
+                     background: rgb(255, 255, 255);
+                     color: #17407A;
+                  }
+               }
+            }
+
+            @media screen and (max-width: 767px){
+               padding: 10px;
+               h5{
+                  font-size: 15px;
+               }
+
+               .button-secondary{
+                  font-size: 12px;
+                  line-height: 18px;
+               }
+            }
+         }
+
+         .inner-main-contents{
+            padding: 32px;
+
+            textarea{
+               width: 100%;
+               text-align: center;
+               resize: none;
+               height: auto;
+            }
+            .add-title{
+               font-size: 56px;
+               line-height: 70px;
+               font-weight: 500;
+            }
+            .add-sub-title{
+               font-size: 35px;
+               line-height: 55px;
+               font-weight: 500;
+            }
+
+            .video-transcript{
+
+               h2{
+                  text-align: center;
+                  font-size: 22px;
+                  font-weight: 500;
+               }
+               .transcript-input{
+                  border: 2px solid #3D71BA;
+                  border-radius: 19px;
+                  font-size: 18px;
+                  font-weight: 400;
+                  padding: 30px;
+                  min-height: 80px;
+
+                  textarea{
+                     border: none;
+                     width: 100%;
+                     text-align: center;
+                  }
+               }
+            }
+
+            @media screen and (max-width: 767px){
+               padding: 6px 6px 20px;
+
+               .video-transcript{
+                  
+                  .transcript-input{
+                     font-size: 14px;
+                     padding: 15px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

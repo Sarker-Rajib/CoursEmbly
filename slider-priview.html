@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coursembly | Slider Priview</title>
+  <!-- =============fav icon=======================================================- -->
+  <link rel='shortcut icon' href='assets/images/brand-logo.png' type='image/x-icon'>
+  <!-- ==== === -font awesome==== ===  -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <!-- ==== === -bootstrap ==== ======= === -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <!-- ==== ===swiper ==== ======= === -->
+  <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
+  <!-- ==== === fornts (google fonts) ==== === -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ==== === customed css==== === -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="course">
+  <!-- === header section start === -->
+  <header class="header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand">
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/images/Brand-logo.png" alt="image"></a>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Become an Instructor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">SignUp</a>
+            </li>
+            
+            <span class="vr me-5 d-none d-lg-block"></span>
+            <li class="nav-item">
+              <a href="#">
+                <span class="d-none d-lg-block">
+                  <span class="d-flex align-items-center">
+                    <span class="image me-2 flex-shrink-0">
+                      <img src="assets/images/Avatar.png" alt="avtar">
+                    </span>
+                    <span class="text d-flex flex-column">
+                      <span class="title">Your Name</span>
+                      <span class="level">Student lvl1</span>
+                    </span>
+                  </span>
+                </span> 
+                <span class="d-block d-lg-none"><img src="assets/images/user.png" alt="User" >
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+    </div>
+  </header>
+  <!-- ===//end of header section === -->
+
+  <!-- main contwnts -->
+  <main>
+    <section class="course-add">
+      <div class="container-fluid">
+        <div class="content-wrapper">
+          <div class="course-menu">
+            <div class="row">
+                <div class="col-xl-3">
+                  <div class="sticky-top wrapping-main">
+
+                    <div class="progres-head mb-3">
+                      <div class="title-calculus d-flex align-items-center justify-content-between">
+                          <h5 class="heading-calculus">Course Name Here</h5>
+                          <a href="#"><img src="assets/images/edit.png" alt="edit"></a>
+                      </div>
+                    </div>
+  
+                    <div class="menu-wrapper">
+                      <div class="accordion" id="courseMenuAccordio">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button index-header unlocked" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Title 1 - Introduction <span class="ms-auto add-new"><img src="assets/images/add.png" alt="add"></span>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li class="unlocked">
+                                      <a href="#">
+                                        <h6>Sub Title 1 - Intro</h6>
+                                        <p>Video - 5 Min</p>
+                                      </a>
+                                    </li>
+                                    <li class="unlocked">
+                                      <a href="#">
+                                        <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                        <p>PDF - 234kb</p>
+                                      </a>
+                                    </li>
+                                    <li class="unlocked">
+                                      <a href="#" class="current">
+                                        <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                        <p>Download</p>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                        <p>Text</p>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                        <p>Audio</p>
+                                      </a>
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Title 2 - Introduction <span class="ms-auto">0/5</span>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                      <a href="#">
+                                        <h6>Sub Title 1 - Intro</h6>
+                                        <p>Video - 5 Min</p>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                        <p>PDF - 234kb</p>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                        <p>Download</p>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                        <p>Text</p>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                        <p>Audio</p>
+                                      </a>
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Title 4 - Introduction <span class="ms-auto">0/5</span>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 1 - Intro</h6>
+                                    <p>Video - 5 Min</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                    <p>PDF - 234kb</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                    <p>Download</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                    <p>Text</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                    <p>Audio</p>
+                                  </a>
+                                </li>
+                            </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Title 5 - Introduction <span class="ms-auto">0/5</span>
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 1 - Intro</h6>
+                                    <p>Video - 5 Min</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                    <p>PDF - 234kb</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                    <p>Download</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                    <p>Text</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                    <p>Audio</p>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                              Title 6 - Introduction <span class="ms-auto">0/5</span>
+                            </button>
+                          </h2>
+                          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 1 - Intro</h6>
+                                    <p>Video - 5 Min</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                    <p>PDF - 234kb</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                    <p>Download</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                    <p>Text</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                    <p>Audio</p>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                              Title 7 - Introduction <span class="ms-auto">0/5</span>
+                            </button>
+                          </h2>
+                          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 1 - Intro</h6>
+                                    <p>Video - 5 Min</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                    <p>PDF - 234kb</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                    <p>Download</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                    <p>Text</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                    <p>Audio</p>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                              Title 8 - Introduction <span class="ms-auto">0/5</span>
+                            </button>
+                          </h2>
+                          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 1 - Intro</h6>
+                                    <p>Video - 5 Min</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                    <p>PDF - 234kb</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                    <p>Download</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                    <p>Text</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                    <p>Audio</p>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                              Title 9 - Introduction <span class="ms-auto">0/5</span>
+                            </button>
+                          </h2>
+                          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 1 - Intro</h6>
+                                    <p>Video - 5 Min</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                    <p>PDF - 234kb</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                    <p>Download</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                    <p>Text</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                    <p>Audio</p>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                              Title 10 - Introduction <span class="ms-auto">0/5</span>
+                            </button>
+                          </h2>
+                          <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 1 - Intro</h6>
+                                    <p>Video - 5 Min</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                    <p>PDF - 234kb</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                    <p>Download</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                    <p>Text</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                    <p>Audio</p>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                          
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingEleven">
+                            <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                              Title 11 - Introduction <span class="ms-auto">0/5</span>
+                            </button>
+                          </h2>
+                          <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 1 - Intro</h6>
+                                    <p>Video - 5 Min</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                    <p>PDF - 234kb</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                    <p>Download</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                    <p>Text</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                    <p>Audio</p>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwelve">
+                            <button class="accordion-button index-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                              Title 12 - Introduction <span class="ms-auto">0/5</span>
+                            </button>
+                          </h2>
+                          <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#courseMenuAccordio">
+                            <div class="accordion-body">
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 1 - Intro</h6>
+                                    <p>Video - 5 Min</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 2 - Lorem ipsum DOlor</h6>
+                                    <p>PDF - 234kb</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 3 - Lorem ipsum DOlor</h6>
+                                    <p>Download</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 4 - Lorem ipsum DOlor</h6>
+                                    <p>Text</p>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <h6>Sub Title 5 - Lorem ipsum DOlor</h6>
+                                    <p>Audio</p>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item py-5 bg-transparent border-0"></div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-xl-9">
+                  <div class="course-content-display d-none d-xl-block">
+                    <div class="contents-header d-flex align-items-center justify-content-between">
+                      <h5>Edit Sub Slide 3</h5>
+                      <div class="buttons d-flex align-items-center">
+                        <a href="#" class="btn button-secondary dark me-3">Save </a>
+                        <a href="#" class="btn button-secondary align-items-center">Publish<i class="far fa-chevron-right ms-2"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="inner-main-contents">
+                      <div class="ratio ratio-21x9 overflow-hidden border-25">
+                        <div class="edit-area bg-light d-flex  align-items-center">
+                          <div class="text-center w-100">
+                            <div>
+                              <textarea class="add-title border-0 bg-transparent">Click to add Title</textarea>
+                            </div>
+                            <div>
+                              <textarea class="add-sub-title border-0 bg-transparent">Click to add Subtitle</textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="video-transcript pt-3">
+                        <h2 class="py-3">Video Transcript</h2>
+                        <div class="transcript-input">
+                          <textarea name="video-transcript" class="video-transcript">Click to add Video Transcript </textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === newslatter section start === -->
+    <section class="newslatter">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="row align-items-center gy-3 gy-lg-0">
+            <div class="col-lg-6">
+              <h2 class="text-center text-lg-start">Stay up to date with the <br>
+                latest news from PieceX</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-wrapper d-flex w-100  align-items-center">
+                <form class="w-100">
+                  <div class="search-box d-flex w-100 align-items-center justify-content-between">
+                    <input type="text" placeholder="Email Here">
+                    <button class="button-secondary d-flex align-items-center justify-content-center"><i class="fal fa-search me-1 me-md-3"></i>SUBSCRIBE</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===//end of newslatter section === -->
+  </main>
+  <!-- main section ended -->
+
+
+  <!-- === footer starts from here -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6  col-xl-3 col-12">
+            <img src="assets/images/footer-logo.png" class="img-fluid" alt="Couseembly">
+            <p>Lorem ipsum dolor sit asdw amet, <br>
+              consectetur adipiscing elit.</p>
+          </div>
+  
+          <div class="col-md-6  col-xl-3 col-12 pt-4 pt-md-0">
+            <h4>Links</h4>
+            <ul class="ps-0">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Become an Instructor</a></li>
+              <li><a href="#">SignUp</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6  col-xl-3 col-12 pt-4 pt-md-0">
+            <h4>Support</h4>
+            <ul class="ps-0">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">License</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6  col-xl-3 col-12 pt-4 pt-xl-0">
+            <h4>Connect With Us</h4>
+            <ul class="social-links ps-0">
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-discord"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="m-0">
+    <div class="footer-bottom py-3 py-md-4">
+      <div class="container">
+        <div class="row gy-3 gy-md-0">
+          <div class="col-md-6 col-12 text-center text-md-start"><p><span>&copy;</span>2022 Coursembly. All rights Reserved</p></div>
+          <div class="col-md-6 col-12 d-flex justify-content-center justify-content-md-end">
+            <a href="#">Terms of use</a>
+            <span class="mx-3">|</span>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
