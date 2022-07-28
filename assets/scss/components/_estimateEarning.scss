@@ -1,0 +1,75 @@
+.estimate-earning{
+   padding: 60px 0;
+
+   .inner-section{
+      border: 10px solid #3D71BA;
+      border-radius: 42px;
+      padding: 25px;
+
+      .range-visual{
+         height: 100%;
+         padding: 70px 50px;
+         background: #3D71BA;
+         border-radius: 22px;
+
+         p{
+            font-weight: 600;
+            font-size: 25px;
+            color: #fff;
+         }
+
+   
+         .slider-part{
+            position: relative;
+            .active-progress{
+               position: absolute;
+               top: 50%;
+               transform: translateY(-50%);
+               left: 0;
+               height: 20px;
+               background: rgb(26,187,144);
+               background: linear-gradient(0deg, rgba(26,187,144,1) 0%, rgba(88,255,222,1) 100%);
+               border-top-left-radius: 10px;
+               border-bottom-left-radius: 10px;
+               z-index: 89;
+            }
+         }
+      }
+   }
+
+   .earning{
+      color: rgba(#282E44, 0.67);
+      font-size: 30px;
+      font-family: "Octarine-Bold";
+   }
+
+   .valueof{
+      font-weight: 600;
+      font-size: 56px;
+      color: #3D71BA;
+   }
+
+   @media screen and (max-width: 767px){
+      padding-bottom: 30px;
+
+      .inner-section{
+         padding: 15px;
+
+         .range-visual{
+            padding: 40px 20px;
+
+            p{
+               font-size: 18px;
+            }
+         }
+      }
+
+      .earning{
+         font-size: 20px;
+      }
+
+      .valueof{
+         font-size: 40px;
+      }
+   }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Coursembly | Course</title>
+   <!-- =============fav icon=======================================================- -->
+   <link rel='shortcut icon' href='assets/images/brand-logo.png' type='image/x-icon'>
+   <!-- ==== === -font awesome==== ===  -->
+   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+   <!-- ==== === -bootstrap ==== ======= === -->
+   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+   <!-- ==== ===swiper ==== ======= === -->
+   <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
+   <!-- ==== === fornts (google fonts) ==== === -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <!-- ==== === customed css==== === -->
+   <style>
+      *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+      }
+
+      body{
+         background: rgb(160, 255, 97);
+      }
+
+      .range-skider{
+         height: 100vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      input[type="range"]{
+         position: relative;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         display: block;
+         width: 80%;
+         height: 8px;
+         background: #bd1414;
+         border-radius: 8px;
+         outline: none;
+      }
+      input[type="range"]::-webkit-slider-runnable-track{
+         -webkit-appearance: none;
+         height: 8px;
+      }
+      input[type="range"]::-moz-track{
+         -moz-appearance: none;
+         height: 8px;
+      }
+      input[type="range"]::-ms-track{
+         appearance: none;
+         height: 8px;
+      }
+      input[type="range"]::-webkit-slider-thumb{
+         -webkit-appearance: none;
+         height: 20px;
+         width: 20px;
+         background: rgb(255, 255, 255);
+         border-radius: 50%;
+         cursor: pointer;
+         margin-top: -6px;
+         border: 2px solid #000000;
+      }
+      input[type="range"]::-moz-ranze-thumb{
+         -webkit-appearance: none;
+         height: 20px;
+         width: 20px;
+         background: rgb(255, 255, 255);
+         border-radius: 50%;
+         cursor: pointer;
+         margin-top: -6px;
+         border: 2px solid #000000;
+      }
+      input[type="range"]::-ms-thumb{
+         appearance: none;
+         height: 20px;
+         width: 20px;
+         background: rgb(255, 255, 255);
+         border-radius: 50%;
+         cursor: pointer;
+         margin-top: -6px;
+         border: 2px solid #000000;
+      }
+
+      input[type="range"]:active::-webkit-slider-thumb{
+         background: rgb(255, 2, 192);
+         border: 2px solid yellow;
+      }
+
+   </style>
+</head>
+
+
+<body>
+   <div class="range-skider">
+      <div class="container">
+         <span id="slider-value">0</span>
+         <input type="range" id="mySlider" min="0" max="100" value="50" oninput="slider()">
+      </div>
+   </div>
+
+
+
+
+
+
+
+   <script>
+      const mySlider = document.getElementById("mySlider");
+      const sliderValue = document.getElementById("slider-value");
+
+      function slider(){
+         valPercent = (mySlider.value / mySlider.max)*100;
+         mySlider.style.background = `linear-gradient(to right, #3264fe ${valPercent}%, #d5d5d5 ${valPercent}%)`;
+
+         sliderValue.innerHTML = mySlider.value;
+      }
+
+      slider();
+   </script>
+</body>
+</html>

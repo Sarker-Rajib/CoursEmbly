@@ -5,10 +5,10 @@
    display: flex;
    align-items: center;
 
-   @media screen and (max-width: 768px){
+   @media screen and (max-width: 767px){
       background: url(../images/home-bg-mobile.png) center center/cover;
       align-items:flex-start;
-      padding: 120px 30px 40px;
+      padding: 150px 30px 40px;
       
    }
 
@@ -28,7 +28,7 @@
          line-height: 55px;
       }
 
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
          font-size: 24px;
          line-height: 25px;  
          text-align: center;       
@@ -40,7 +40,7 @@
       font-weight: 400;
       font-size: 30px;
       font-family: 'Karla', sans-serif;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
          font-size: 11px;
          line-height: 18px;  
          text-align: center;       
@@ -49,7 +49,7 @@
 
    .form-wrapper{
       padding: 60px 0;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
          padding: 25px 0;     
       }
 
@@ -59,7 +59,7 @@
          max-width: 750px;
 
          input{
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 767px){
                font-size: 8px;
             }
          }
@@ -67,7 +67,7 @@
          .button-primary{
             min-height: 50px;
 
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 767px){
                font-size: 6px;
                min-height: 25px;
                max-width: 80px;
