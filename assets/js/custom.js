@@ -1,4 +1,4 @@
- {
+if(document.querySelector('.TestimonialSwiper')){
   var swiper = new Swiper(".TestimonialSwiper", {
     freeMode: true,
     loop: true,
@@ -27,3 +27,10 @@
     }
   });
 }
+
+ // tooltip active global
+ let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+ let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+   return new bootstrap.Tooltip(tooltipTriggerEl)
+ })
+

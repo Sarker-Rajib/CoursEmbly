@@ -83,8 +83,8 @@
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                           <button class="accordion-button index-header unlocked" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Title 1 - Introduction <span class="ms-auto add-new"><img src="assets/images/add.png" alt="add"></span>
-                          </button>
+                            Title 1 - Introduction <span class="ms-auto add-new" data-bs-toggle="tooltip"  data-bs-placement="right" title="Add a Slide"><img src="assets/images/add.png" alt="add"></span>
+                        </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#courseMenuAccordio">
                           <div class="accordion-body">
@@ -699,8 +699,10 @@
 
 
   <!-- script started -->
+  <script src="assets/vendor/bootstrap/js/popper.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/vendor/ckEditor/build/ckeditor.js"></script>
+  <script src="assets/js/custom.js"></script>
   <script>InlineEditor
     .create( document.querySelector( '.editor' ), {
       
