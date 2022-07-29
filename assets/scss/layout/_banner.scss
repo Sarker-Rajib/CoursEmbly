@@ -89,7 +89,12 @@
          line-height: 61px;
          color: #282E44;
 
-         @media screen and (max-width: 768px) {
+         @media screen and (max-width: 1399px) {
+            font-size: 40px;
+            line-height: 50px;
+         }
+
+         @media screen and (max-width: 767px) {
             font-size: 25px;
             line-height: 27px;
          }
@@ -102,7 +107,12 @@
          line-height: 27px;
          color: #282E44;
 
-         @media screen and (max-width: 768px) {
+         @media screen and (max-width: 1399px) {
+            font-size: 16px;
+            line-height: 18px;
+         }
+
+         @media screen and (max-width: 767px) {
             font-size: 10px;
             line-height: 16px;
          }
@@ -111,12 +121,12 @@
       .rating{
          display: flex;
          align-items: center;
-         padding: 25px 0 50px;
+         padding: 20px 0 50px;
 
          .stars{
             color: #F8BA54;
             font-size: 22px;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                font-size: 18px;
             }
          }
@@ -129,7 +139,7 @@
             color: #282E44;
             margin-left: 10px;
    
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                font-size: 12px;
                line-height: 16px;
             }
@@ -159,7 +169,7 @@
          }
        
        
-         @media screen and (max-width: 768px) {
+         @media screen and (max-width: 767px) {
            font-size: 24px;
            line-height: 78px;
          }
@@ -167,6 +177,9 @@
 
       .items{
          padding: 20px 0;
+         @media screen and (max-width: 767px) {
+            padding: 8px 0;
+         }
          .item-header{
             font-weight: 600;
             font-size: 22px;
@@ -176,11 +189,21 @@
                color: #05E59C;
                margin-right: 8px;
             }
+
+            @media screen and (max-width: 767px) {
+               font-size: 18px;
+               line-height: 28px;
+            }
          }
          p{
             font-weight: 400;
             font-size: 18px;
             line-height: 26px;
+
+            @media screen and (max-width: 767px) {
+               font-size: 12px;
+               line-height: 20px;
+            }
          }
       }
    }
@@ -189,11 +212,19 @@
       padding: 60px 20px 0;
       background: url(../images/Course-Priview/bg-rt.png) no-repeat center top/cover;
 
+      @media screen and (max-width: 991px) {
+         padding-top: 10px;
+      }
+
       .video-details{
          font-size: 20px;
          font-weight: 400;
          color: #fff;
          padding: 20px 0 50px;
+
+         @media screen and (max-width: 767px) {
+            font-size: 12px;
+         }
       }
    }
 }

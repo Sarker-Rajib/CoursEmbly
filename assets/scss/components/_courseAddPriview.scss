@@ -98,16 +98,17 @@
          }
 
          .menu-wrapper{
-            max-height: 80vh;
+            max-height: 90vh;
             overflow: auto;
+            border-radius: 10px;
 
             /* width of scroll bar */
             &::-webkit-scrollbar {
                width: 0px;
             }
 
+            
             .accordion{
-               
                .accordion-item{
                   margin-bottom: 20px;
                   border-radius: 9px;
@@ -182,6 +183,7 @@
                               font-weight: 400;
                               color: #F1F1F1;
                               line-height: 25px;
+                              margin-right: 5px;
                            }
                            p{
                               padding-left: 55px;
@@ -236,6 +238,9 @@
                font-size: 20px;
                border-radius: 25px;
                min-width: 160px;
+               @media(max-width: 767px){
+                  min-width: 120px;
+               }
 
                
                &.dark{
@@ -265,6 +270,12 @@
          .inner-main-contents{
             padding: 32px;
 
+            .edit-area{
+               min-height: 600px;
+               @media screen and (max-width: 767px){
+                  min-height: 300px;
+               }
+            }
             textarea{
                width: 100%;
                text-align: center;
@@ -275,11 +286,23 @@
                font-size: 56px;
                line-height: 70px;
                font-weight: 500;
+               min-height: 120px;
+
+               @media screen and (max-width: 767px){
+                  font-size: 40px;
+                  line-height: 50px;
+               }
             }
+
+
             .add-sub-title{
                font-size: 35px;
                line-height: 55px;
                font-weight: 500;
+               @media screen and (max-width: 767px){
+                  font-size: 20px;
+                  line-height: 25px;
+               }
             }
 
             .video-transcript{

@@ -198,6 +198,10 @@
             color: #BBBBBB;
             font-size: 24px;
 
+            @media screen and (max-width: 1399px) {
+               font-size: 20px;
+            }
+
             @media screen and (max-width: 767px) {
                font-size: 9px;
             }
@@ -423,7 +427,7 @@
       .instructor-details{
          .title{
             font-size: 25px;
-            font-weight: 400;
+            font-weight: 500;
             line-height: 35px;
             color: #333333;
          }
@@ -433,6 +437,7 @@
             line-height: 26px;
             color: #1ABB9B;
          }
+
          .duration{
             color: #787878;
             font-size: 15px;
@@ -521,6 +526,67 @@
          color: #fff;
          padding: 8px;
          margin: 5px 0;
+      }
+
+      @media screen and (max-width: 767px){
+         padding: 10px;
+         h3{
+            font-size: 20px;
+         }
+         p{
+            font-size: 12px;
+            line-height: 17px;
+         }
+
+         input{
+            font-size: 12px;
+         }
+      }
+   }
+
+   @media screen and (max-width: 767px){
+      padding: 7px;  
+      
+      .card-top-section{
+         padding: 6px;
+
+         img{
+            max-width: 110px;
+         }
+
+         .instructor-details{
+            .title{
+               font-weight: 600;
+               font-size: 20px;
+               line-height: 35px;
+            }
+
+            .institute{
+               font-size: 15px;
+            }
+
+            .duration{
+               font-size: 10px;
+            }
+         }
+      }
+
+      .pricing-and-buy{
+         .price-tag{
+            .current-price{
+               font-size: 28px;
+               line-height: 19px;
+            }
+            .cut-off{
+               font-size: 12px;
+               line-height: 26px;
+            }
+
+            img{
+               max-width: 50px;
+            }
+         }
+
       }
    }
 }
