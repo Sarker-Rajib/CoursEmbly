@@ -41,21 +41,29 @@
       -webkit-appearance: none;
       height: 30px;
       width: 30px;
-      background: rgb(255, 255, 255);
+      background: rgb(26,187,144);
+      background: linear-gradient(0deg, rgba(26,187,144,1) 0%, rgba(88,255,222,1) 100%);
       border-radius: 50%;
       cursor: pointer;
       margin-top: -12px;
-      border: 5px solid #000000;
+      border: 5px solid #ffffff;
+      position: relative;
+      transform: scale(1);
+      z-index: 9999;
    }
    input[type="range"]::-ms-thumb{
-      appearance: none;
+      -webkit-appearance: none;
       height: 30px;
       width: 30px;
-      background: rgb(255, 255, 255);
+      background: rgb(26,187,144);
+      background: linear-gradient(0deg, rgba(26,187,144,1) 0%, rgba(88,255,222,1) 100%);
       border-radius: 50%;
       cursor: pointer;
       margin-top: -12px;
-      border: 5px solid #000000;
+      border: 5px solid #ffffff;
+      position: relative;
+      transform: scale(1.2);
+      z-index: 9999;
    }
 
    input[type="range"]:active::-webkit-slider-thumb{
