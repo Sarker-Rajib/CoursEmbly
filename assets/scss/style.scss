@@ -13,6 +13,8 @@
 
 /*=== components css start === */
 @use 'components/buttons';
+@use 'components/tooltip';
+@use 'components/range';
 @use 'components/signIn';
 @use 'components/searchBy';
 @use 'components/aboutYourself';
@@ -28,7 +30,6 @@
 @use 'components/startNowAndWe';
 @use 'components/courseContentsAndFaq';
 @use 'components/courseAddPriview';
-@use 'components/range';
 @use 'components/estimateEarning';
 /*===// end of components css === */
 

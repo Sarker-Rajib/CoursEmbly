@@ -34,10 +34,14 @@
          .image{
             position: relative;
             img{
+               border-radius: 50%;
+               border:  8px solid #fff;
+               box-shadow: 0 3px 6px rgba(#000000, 0.16);
                @media screen and (max-width: 767px){
-                  max-width: 120px;
+                  max-width: 100px;
                   position: absolute;
-                  top: -80px;
+                  top: -65px;
+                  border-width: 5px;
                }
             }
          }

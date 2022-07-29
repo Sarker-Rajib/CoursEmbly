@@ -56,15 +56,20 @@
             }
          }
 
+         
          .inner-content{
             .title{
                font-family: "Octarine-Bold";
                font-size: 24px;
                white-space: nowrap;
+               margin-top: 10px;
             }
 
             img{
                max-width: 125px;
+               border-radius: 50%;
+               border:  8px solid #fff;
+               box-shadow: 0 3px 6px rgba(#000000, 0.16);
             }
 
             .text-container{
